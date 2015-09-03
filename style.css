@@ -1,0 +1,96 @@
+
+  body {
+    background-color: #e3e3e9;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0vw;
+  }
+
+  a {
+    color: #19A2DC;
+  }
+
+/* -------------------------------- Stylers --------------*/
+  em {
+    color: #9900FF;
+  }
+
+  .bold {
+    font-weight: 900;
+  }
+
+  .red {
+    color: #fe4538;
+  }
+
+  .blue {
+    color: #429fff;
+  }
+
+  .green {
+    color: #00b41c;
+  }
+
+  .img {
+    width: 65%;
+    height: auto;
+    margin-left: 17.5%;
+    margin-right: 17.5%;
+    padding-bottom: 1vw;
+  }
+/* -------------------------------- End of Stylers --------*/
+
+  .logo {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    margin-bottom: -5vw;
+  }
+
+  .logo img {
+    padding-top: 2vw;
+  }
+
+  .logo h1 {
+    color: #19A2DC;
+    text-align: center;
+    font-size: 2.5em;
+    padding-bottom: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .container {
+    text-align: left;
+    background-color: white;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+    margin-bottom: 5vw;
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+  }
+
+  .container h1 {
+    margin-left: 5.5vw;
+    margin-bottom: -2vw;
+  }
+
+  .container p {
+    padding: 1vw;
+    color: #3E3E3E;
+    font-size: 1.25em;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #container_ul {
+    margin-left: 5.5vw;
+    margin-top: -2vw;
+    padding-bottom: 1vw;
+    list-style-type: none;
+    color: #3E3E3E;
+    font-size: 1.25em;
+  }
