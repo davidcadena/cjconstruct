@@ -16,20 +16,26 @@
         <a target="_blank" href="http://sourceforge.net/projects/construct/files/construct/Classic/ConstructClassic_r1-2.exe/download">here</a>.
         Construct Classic is a cool tool that lets you make a wide variety of video games.
       </p>
+
       <h1>Installing Construct Classic</h1>
       <p>After downloading the file, run the installer. If you need any help during installation let one of the mentors know.</p>
+
       <h1>Making a new Project</h1>
       <p>Now that Construct is installed lets make a game. Start-up Construct on your computer. First click on <em>"File"</em> in the top left corner of the program, then click <em>"New"</em> and click into <em>"New Direct-X game"</em> ,or you can hit <span class="green">CTRL + N</span> on your keyboard. This creates a new blank game for us to build upon, but lets talk about video game mechanics.</p>
+
       <img class="img" src="images/newGame.png" />
       <h1>Video Game Mechanics</h1>
       <p>We are going to be making a '2-dimensional' Video game. These games have a few components we need to be aware of;</p>
+
       <ul id="container_ul">
         <li>- <span class="blue bold">A Background</span></li>
         <li>- <span class="green bold">A Player</span></li>
         <li>- <span class="red bold">Some Enemies</span></li>
       </ul>
+
       <h1>Sprites</h1>
       <p>So before we can make the game, we need at least these three things; a <span class="blue">Background</span>, a <span class="green">Player</span>, and some <span class="red">Enemies</span>. These objects are called <em>"Sprites"</em> ,they can be made with any drawing program, like paint. We are going to be making our <em>"Sprites"</em> in the Construct program, but you can draw your's in paint too.</p>
+
       <h1>The Background</h1>
       <p>Lets start with the background, this is the level that is underneath a players' feet. The player and the enemies move over it, it needs to have a simple style, if the style of the background is too complicated then the player will feel distracted (and may even get sick!). First right-click into the white space in the middle of the screen, then select <em>"Insert an object"</em>.</p>
       <img class="img" src="images/rightClickInsertObjectInMainWindow.png" />
@@ -43,9 +49,60 @@
       <img class="img" src="images/pictureEditorTBSave.png" />
       <p>When your sprite is done, hit <em>"Save"</em> at the top left corner. Save this file somewhere on your computer, I recommend saving it to the Desktop folder.</p>
       <img class="img" src="images/dragTB.png" />
-      <p>Now that it is saved somewhere safe, close out of the editing window <em>(If it asks you to save again, hit "OK")</em>. You should see one tile in the middle of the screen, make the tile fill the screen by dragging the squares in the corners of the tile.</p>
+      <p>Now that it is saved somewhere safe, close out of the editing window <em>(If it asks you to save again, hit "Save")</em>. You should see one tile in the middle of the screen, make the tile fill the screen by dragging the squares in the corners of the tile.</p>
       <img class="img" src="images/backgroundFinal.png" />
-      <p>Your background should look something like this, we are almost done adding it, and are almost ready to start adding a player and enemies. <em>(Ask a mentor if you need any help)</em> -----------------------</p>
+      <p>Your background should look something like this, we are almost done adding it, and are almost ready to start adding a player and enemies. <em>(Ask a mentor if you need any help)</em></p>
+      <img class="img" src="images/layerTab.png" />
+      <p>Now we are going to view our current <em>"Layers"</em> , our game is like a cake; we have the background layer on the bottom, our player and enemy layers above that in the middle, and cool special effects on the top. We are going to be working with players and enemies after this point, so we do not need to work with the background layer. To keep the layer from moving around we are going to <em>"Lock"</em> it using the layers tab. The Layers tab is near the bottom right corner of the screen, next to the <em>"Animator"</em> tab and the <em>"Project"</em> Tab.</p>
+      <ul id="container_ul">
+       <li>1. Once you find it click into it.</li>
+       <li>2. Near the top right is where our layers are, and by the end of this tutorial our game is going to have about 3 layers. Click on <em>"Layer 1"</em> near the top.</li>
+       <li>3. Then click the tiny Lock Symbol next to it on the left. <em>(The lock symbol should turn grey)</em></li>
+       <li>4. The eyeball symbol makes the layer invisible, if we ever need to make the background go away we can click it. For now we will leave the eyeball alone.</li>
+       <li>5. After the layer has been locked try to move it, as you can see there is no way to further edit the layer, keeping it safe.</li>
+      </ul>
+
+      <h1>The boring part is over :)</h1>
+      <p>We have successfully added our background layer, now we can work with the fun stuff; the players, enemies, and special effects.</p>
+
+      <h1>A New Layer</h1>
+      <p>Before we make any more objects we should define some new layers. All we have is the Background Layer, which is still called layer 1.</p>
+      <ul id="container_ul">
+        <li>1. Go to the Layers tab.</li>
+        <li>2. As you can see it is still called <em>"Layer 1"</em> , select the Layer.</li>
+        <li>3. On the left hand side you will see a <em>"Layer Properties"</em> window, change the Name value from <em>"Layer 1"</em> to <em>"Background"</em>.</li>
+        <li><em>(Ask a menor if you need help)</em></li>
+      </ul>
+      <p>Now that we have our <span class="blue">Background</span> Layer we will make a <span class="green">Player</span> Layer.</p>
+      <ul id="container_ul">
+        <li>1. While in the Layers Tab, click the symbol that looks like a little up arrow on a peice of paper. <em>(It looks like this -> <img id="img" src="images/addLayer.png" />)</em></li>
+        <li>2. Another Layer should pop up named <em>"Layer 2"</em> , rename this layer to <em>"Players and Enemies"</em>.</li>
+      </ul>
+
+      <h1>The Player</h1>
+      <p>Whats a game if nobody can play it? Lets add a player; remember, the player and the enemies are <em>"Sprites"</em> , sprites are like our background, we have to draw them and then add them to the game. <em>(Before following the steps below, make sure you are in the "Players and Enemies" Layer)</em></p>
+      <ul id="container_ul">
+        <li>1. Right-Click somewhere on the locked background, then click "Insert an object".</li>
+        <li>2. Navigate through the menu for "Sprite", then click Insert at the top right.</li>
+        <li>3. Click anywhere within the background.</li>
+        <li>4. Now the editor should be up and we can draw our player.</li>
+      </ul>
+      <img class="img" src="images/player.png" />
+      <p>In the editor I am using the bucket tool, with the color yellow. I chose yellow because it will pop out well with the blue, if the players color is too similar to the background then we might get lost!</p>
+      <ul id="container_ul">
+        <li>1. Pick a good player color.</li>
+        <li>2. Fill in the square with the bucket tool.</li>
+      </ul>
+      <img class="img" src="images/resize.png" />
+      <p>Right now our player is pretty big, so we need to make it smaller.</p>
+      <ul id="container_ul">
+        <li>1. Click the <em>"Resize"</em> tool near the top of the window.<em>(It looks like a line with two arrow-heads)</em></li>
+        <l1>2. As you can see our player is 128 by 128 pixels, you can make him smaller by changing the values in the two boxes.</li>
+        <li>3. Change the values to 15 by 15, then click <em>"Resize"</em>.</li>
+        <li>4. Save and exit the picture editor.</li>
+      </ul>
+      
+
     </div>
   </body>
 </html>

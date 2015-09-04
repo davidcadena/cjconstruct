@@ -94,3 +94,8 @@
     color: #3E3E3E;
     font-size: 1.25em;
   }
+
+  #img{
+    width: 2vw;
+    height: auto;
+  }
