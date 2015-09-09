@@ -131,7 +131,7 @@
         <li>1. Right-click anywhere in the tiled background <em>(Make sure you are in the Players and Enemies Layer)</em>.</li>
         <li>2. Click <em>"Insert and object"</em>.</li>
         <li>3. Click Sprite, then click insert on the top right.</li>
-        <li>4. Color the enemy all red, and resize them to 15 by 15 pixels <em>(Ask a mentor if you need any help)</em>.</li>
+        <li>4. Color the enemy all red, and resize them to 25 by 25 pixels, since this size is bigger than our player, our enemy will be more intimidating <em>(Ask a mentor if you need any help)</em>.</li>
         <li>5. Save and exit the editor.</li>
         <li>6. Like we did with the player sprite, rename the red sprite "RedEnemy".<li>
       </ul>
@@ -151,8 +151,36 @@
       </ul>
       <p>You should see a stationary enemy, and when you come into contact with them the player is destroyed! Our enemy doesn't do much though, lets make him follow the player around the map.</p>
       <ul id="container_ul">
-        <li></li>
+        <li>1. Near the bottom of the screen is a tab called <em>"Layout Editor"</em> , open up this tab.</li>
+        <li>2. Click on the red Enemy in your game.</li>
+        <li>3. Near the left hand side of the screen is our enemies' properties, go to it's behaviors tab.</li>
+        <li>4. Add a new behavior called <em>"Bullet"</em>. The Bullet behavior makes something move forward at a certain speed, hence the name bullet.</li>
+        <li>5. The speed of our enemy, which is defined by the bullet attribute, is 250. Our player's speed is only 200, so when we program the enemy to follow the player it won't be very fair. Change the speed to 185, or anything below 200.</li>
+        <li>6. Add a new behavior called <em>"Line of Sight"</em> , this behavior defines how far and how wide our enemy can see, so it's basically giving our enemy eyes.</li>
+        <li>7. Our enemy's <em>"Angle Range"</em> is defined as 360* degrees, this means when we program him to follow the player he will always know where the player is. This isn't very fair, so we should limit the enemies' line of site. Change the <em>"Angle Range"</em> value to 90* degrees <em>(you only have to put in numbers for this value)</em> .</li>
+        <li>8. Go to the Event Sheet Editor.</li>
+        <li>9. Right Click in the Event Sheet Editor and select <em>"Insert event"</em></li>
+        <li>10. Select the Red Enemy.</li>
+        <li>11. Near the top of this window is a tab called <em>"LineOdSight"</em> , click into this tab.</li>
+        <li>12. Click within this tab's window where it says <em>"Has LOS to object"</em> , then click next.</li>
+        <li>13. Click on where it says <em>"Pick and object"</em> .</li>
+        <li>14. Click on Player, then hit OK.</li>
+        <li>15. Click Finish.</li>
       </ul>
+      <p>Whew, that was alot of steps, lets break this into two parts here ;</p>
+      <ul id="container_ul">
+        <li>Now we have added this event's <em>"if"</em> , these ifs check whether a condition is true or not, if the condition is true, it will perform the action on the right hand side. This logic is great because we can have statements within statements to create complicated AI and video game mechanics in general.</li>
+        <li>1. Click <span class="red">+ New action</span> to the right of the event we just created.</li>
+        <li>2. Click on the Red Enemy and then hit Next.</li>
+        <li>3. Within the Red Enemy tab select the <em>"Rotate towards another object"</em> option, then hit Next.</li>
+        <li>4. Pick the Player Object, then set the <em>"Rotation amount"</em> value below to <span class="blue">30</span> , then click Finish</li>
+        <li>5. Add another action.</li>
+        <li>6. Select Red Enemy.</li>
+        <li>7. Select Set speed.</li>
+        <li>8. Set the speed to 190, then hit Finish.</li>
+      </ul>
+      <h1>Time to test!</h1>
+      <p>Now we have a game with a background, some enemies, and a player. Select the tab near the top labled <em>"Project"</em> , then select <em>"Run all"</em> to test your game. That concludes this tutorial, have fun using consruct! If you would like to learn more, you can visit <a href="asdf">This Website</a> for more tutorials. <span class="blue">You can also speak to any mentors for this booth for more advanced stuff.</span></p>
     </div>
   </body>
 </html>
